@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+<nav style="background-color: #e3f2fd;">
+  <a class="navbar-brand" style="color: #0D7BCD" href="\">Let's Travel </a>
+ 
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="nav-item active">
+      <a class="nav-link active" href="{{path('destinations')}}"  style="color: #0D7BCD"  >Destinations   <span class="sr-only">(current)</span></a>
+
+    </div>
+  </div>
+</nav>
+        {% block body %}
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
